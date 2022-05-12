@@ -1,15 +1,29 @@
 <html>
-    <head>
-        <title>
-          css chapter 1
-        </title>
-        <style type="text/css">
-            div{background-color:aquamarine;height:200px;width:200px;}
-        </style>
-    
-    </head>   
-    <body>
-        <div style="background-color: burlywood;height:200px;width:200px;color: darkgreen;font-size: 30px;">inline stylesheet</style>
-        </div><hr width="400%"  style="text-decoration: aliceblue;"/>
-    </body>
+	<head>
+		<style type="text/css"> 
+			div 
+            {
+                margin-left: 32.5%;
+			    width: 150px;
+			    height: 150px;
+			    background-color: red;
+			    position:relative;
+			    animation-name:Demo;
+			    animation-duration:10s;
+			    animation-iteration-count:infinite;
+                
+			 }
+	
+			@keyframes Demo{
+				0%{background-color:rgb(0, 153, 255); left:0px; top:0px;transform:rotate(0deg);box-shadow: 0px 0px 50px lawngreen;}
+				25%{background-color:rgb(0, 255, 42); left:200px; top:0px;transform:rotate(90deg);box-shadow: 0px 0px 50px red;}
+				50%{background-color:rgb(255, 94, 0); left:200px; top:200px;transform:rotate(180deg);box-shadow: 0px 0px 50px yellow;}
+				75%{background-color:rgb(231, 218, 31); left:0px; top:200px;transform:rotate(270deg);box-shadow: 0px 0px 50px blue;}
+				100%{background-color:rgb(0, 153, 255); left:0px; top:0px;transform:rotate(360deg);box-shadow: 0px 0px 50px black;}
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
 </html>
